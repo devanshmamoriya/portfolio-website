@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-mist text-ink dark:bg-void dark:text-fog font-body antialiased transition-colors duration-300;
+  }
+
+  ::selection {
+    @apply bg-signal/30 text-ink dark:text-white;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid #00D9A3;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply px-6 sm:px-8 lg:px-12;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-xs tracking-[0.2em] uppercase text-signal;
+  }
+
+  .section-title {
+    @apply font-display text-3xl sm:text-4xl font-semibold text-ink dark:text-white mt-2;
+  }
+
+  .card {
+    @apply bg-mist-raised dark:bg-void-raised border border-line-light dark:border-line-dark rounded-2xl transition-colors duration-300;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-line-light dark:border-line-dark bg-mist-raised dark:bg-void-raised px-3 py-1 text-xs font-mono text-ink/80 dark:text-fog/90;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-signal px-5 py-3 text-sm font-semibold text-void hover:bg-signal/90 active:scale-[0.98] transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-line-light dark:border-line-dark px-5 py-3 text-sm font-semibold text-ink dark:text-white hover:border-signal hover:text-signal dark:hover:text-signal active:scale-[0.98] transition-all duration-200;
+  }
+}
+
+/* Custom scrollbar, subtle */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2A3441;
+  border-radius: 999px;
+}
