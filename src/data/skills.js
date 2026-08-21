@@ -1,27 +1,27 @@
 const skills = [
   {
-    category: 'Programming',
-    items: ['Java', 'C++', 'C', 'JavaScript', 'Python'],
+    category: 'Languages',
+    items: ['Java', 'C++', 'C', 'JavaScript', 'Python', 'SQL'],
   },
   {
     category: 'Backend',
-    items: ['Spring Boot', 'Spring MVC', 'Spring Core', 'Spring ORM', 'Spring Security', 'Hibernate', 'JDBC', 'JSP / Servlet', 'REST APIs', 'Microservices'],
+    items: ['Spring Boot', 'Microservices', 'Spring Cloud','Spring Session', 'Spring Framework', 'Spring Web MVC', 'Spring Core', 'Spring Data JPA', 'Spring Security', 'Spring ORM', 'Hibernate', 'JDBC', 'JSP', 'Servlet', 'REST APIs' ],
   },
   {
     category: 'Frontend',
-    items: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Axios'],
+    items: ['React.js', 'Angular', 'HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Axios'],
   },
   {
     category: 'Database',
-    items: ['MySQL'],
+    items: ['MySQL', 'SQL Server', 'PostreSQL', 'MongoDB'],
   },
   {
     category: 'Tools & DevOps',
-    items: ['Maven', 'Git', 'GitHub', 'Docker', 'Linux'],
+    items: ['Maven', 'Git', 'GitHub', 'Docker', 'Kuberneates', 'Jenkins', 'Linux', 'AWS' ],
   },
   {
-    category: 'Networking & Embedded',
-    items: ['OpenWrt', 'OpenSync', 'prplOS', 'prplMesh', 'OpenThread', 'OTBR', 'Wireshark', 'Raspberry Pi'],
+    category: 'AI',
+    items: ['GenAI', 'Claude', 'Cursor', 'Codex', 'chatGPT'],
   },
 ]
 
